@@ -1,167 +1,205 @@
 <header class="header">
-    <!-- ================================ HEADER NAVIGATION =============================== -->
-    <nav class="header__nav">
-      <div class="header__top">
-        <p class="header__text">
-          Financing option available at checkout.
-        </p>
+  <nav class="header__nav nav">
+    <div class="nav__top">
+      <div class="container">
+        <div class="nav__top-inner">
+          <a class="nav__phone" href="tel:4055550128">
+            Available 24/7 at <span>(405) 555-0128</span>
+          </a>
+
+          <ul class="nav__top-list">
+            <li class="nav__top__item"><a class="nav__top-link" href="#">Delivery & returns</a></li>
+            <li class="nav__top__item"><a class="nav__top-link" href="#">Track order</a></li>
+            <li class="nav__top__item"><a class="nav__top-link" href="#">Blog</a></li>
+            <li class="nav__top__item"><a class="nav__top-link" href="#">Contacts</a></li>
+          </ul>
+
+          <div class="nav__lang-block">
+            <select class="nav__lang">
+              <option>Eng / $</option>
+              <option>Rus / P</option>
+            </select>
+          </div>
+
+          <div class="nav__user">
+            <button class="nav__login">Log in</button>
+            <button class="nav__register">Register</button>
+          </div>
+        </div>
       </div>
-      <div class="header__bottom">
-        <!-- ================================ LOGO SITE ================================== -->
-        <a class="header__logo" href="#">
-          <img class="logo" src="./img/icon/logo.png" alt="Logotype site BoostedUSA">
+    </div>
+
+    <div class="container">
+      <div class="nav__average">
+        <a class="nav__logo" href="/">
+          <img class="nav__img" src="img/logo.svg" alt="Logotype site Createx" width="130" height="20">
         </a>
-        <!-- ================================ MENU SITE ================================== -->
-        <ul class="header__menu">
-          <li class="header__item">
-            <a class="header__link" data-goto="#skateboard" href="#">
-              Electric Skateboards
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Women
             </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" data-goto="#rev" href="#">
-              Electric Scooters
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Men
             </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" data-goto="#accesories" href="#">
-              Accessories
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Girls
             </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" data-goto="#card" href="#">
-              Gift Card
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Boys
             </a>
           </li>
-          <li class="header__item">
-            <a class="header__link" href="##">
-              More Info
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Sale
             </a>
           </li>
         </ul>
-        <!-- ============================= USER & ICON CART ============================== -->
-        <div class="header__user">
-          <button class="header__btn header__btn--login" type="button" data-path="login" data-animation="fade" data-speed="300" aria-label="Link on Login user">
-            <svg class="header__icon">
-              <use xlink:href="img/sprite.svg#user"></use>
+
+        <form class="nav__search" action="#">
+          <label>
+            <input class="nav__input" id="search" type="search" name="search" placeholder="Search for products...">
+          </label>
+        </form>
+
+        <div class="nav__categories">
+          <a class="nav__average-link" href="#" data-path="favorites" data-animation="fade" data-speed="300" aria-label="Link on favorites product">
+            <svg class="nav__icon nav__icon--fav" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#favorite"></use>
             </svg>
-          </button>
-          <button class="header__btn header__btn--cart" type="button" aria-label="Link on cart site">
-            <svg class="header__icon">
+            <span>2</span>
+          </a>
+          <button class="nav__btn" type="button" data-path="cart" data-animation="fade" data-speed="300" aria-label="Link on cart site">
+            <svg class="nav__icon nav__icon--cart" aria-hidden="true">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
+            <span class="nav__count-cart">4</span>
           </button>
-          <!-- mini cart -->
-          <div class="mini-cart">
-            <div class="mini-cart__top" data-simplebar>
-              <ul class="mini-cart__list">
-                <li class="mini-cart__item">
-                  <article class="mini-cart__product mini-product">
-                    <div class="mini-product__image">
-                      <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Stealth">
+        </div>
+
+        <div class="mini-cart">
+          <div class="mini-cart__top" data-simplebar>
+            <ul class="mini-cart__list">
+              <li class="mini-cart__item">
+                <article class="mini-cart__product mini-product">
+                  <div class="mini-product__image">
+                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Stealth"> -->
+                  </div>
+                  <div class="mini-product__content">
+                    <div class="mini-product__text">
+                      <h3 class="mini-product__title">
+                        Boosted Stealth
+                      </h3>
+                      <span class="mini-product____price">
+                        $1,279.00
+                      </span>
                     </div>
-                    <div class="mini-product__content">
-                      <div class="mini-product__text">
-                        <h3 class="mini-product__title">
-                          Boosted Stealth
-                        </h3>
-                        <span class="mini-product____price">
-                          $1,279.00
-                        </span>
-                      </div>
-                      <button class="mini-product__delete" aria-label="Delete product">
-                        <svg>
-                          <use xlink:href="./img/sprite.svg#delete"></use>
-                        </svg>
-                      </button>
+                    <button class="mini-product__delete" aria-label="Delete product">
+                      <svg>
+                        <use xlink:href="./img/sprite.svg#delete"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="mini-cart__item">
+                <article class="mini-cart__product mini-product">
+                  <div class="mini-product__image">
+                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Stealth"> -->
+                  </div>
+                  <div class="mini-product__content">
+                    <div class="mini-product__text">
+                      <h3 class="mini-product__title">
+                        Boosted Stealth
+                      </h3>
+                      <span class="mini-product____price">
+                        $1,279.00
+                      </span>
                     </div>
-                  </article>
-                </li>
-                <li class="mini-cart__item">
-                  <article class="mini-cart__product mini-product">
-                    <div class="mini-product__image">
-                      <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Stealth">
+                    <button class="mini-product__delete" aria-label="Delete product">
+                      <svg>
+                        <use xlink:href="./img/sprite.svg#delete"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="mini-cart__item">
+                <article class="mini-cart__product mini-product">
+                  <div class="mini-product__image">
+                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Mini X"> -->
+                  </div>
+                  <div class="mini-product__content">
+                    <div class="mini-product__text">
+                      <h3 class="mini-product__title">
+                        Boosted Mini X
+                      </h3>
+                      <span class="mini-product____price">
+                        $1,579.00
+                      </span>
                     </div>
-                    <div class="mini-product__content">
-                      <div class="mini-product__text">
-                        <h3 class="mini-product__title">
-                          Boosted Stealth
-                        </h3>
-                        <span class="mini-product____price">
-                          $1,279.00
-                        </span>
-                      </div>
-                      <button class="mini-product__delete" aria-label="Delete product">
-                        <svg>
-                          <use xlink:href="./img/sprite.svg#delete"></use>
-                        </svg>
-                      </button>
+                    <button class="mini-product__delete" aria-label="Delete product">
+                      <svg>
+                        <use xlink:href="./img/sprite.svg#delete"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="mini-cart__item">
+                <article class="mini-cart__product mini-product">
+                  <div class="mini-product__image">
+                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Plus v3"> -->
+                  </div>
+                  <div class="mini-product__content">
+                    <div class="mini-product__text">
+                      <h3 class="mini-product__title">
+                        Boosted Plus v3
+                      </h3>
+                      <span class="mini-product____price">
+                        $1,379.00
+                      </span>
                     </div>
-                  </article>
-                </li>
-                <li class="mini-cart__item">
-                  <article class="mini-cart__product mini-product">
-                    <div class="mini-product__image">
-                      <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Mini X">
-                    </div>
-                    <div class="mini-product__content">
-                      <div class="mini-product__text">
-                        <h3 class="mini-product__title">
-                          Boosted Mini X
-                        </h3>
-                        <span class="mini-product____price">
-                          $1,579.00
-                        </span>
-                      </div>
-                      <button class="mini-product__delete" aria-label="Delete product">
-                        <svg>
-                          <use xlink:href="./img/sprite.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </article>
-                </li>
-                <li class="mini-cart__item">
-                  <article class="mini-cart__product mini-product">
-                    <div class="mini-product__image">
-                      <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Plus v3">
-                    </div>
-                    <div class="mini-product__content">
-                      <div class="mini-product__text">
-                        <h3 class="mini-product__title">
-                          Boosted Plus v3
-                        </h3>
-                        <span class="mini-product____price">
-                          $1,379.00
-                        </span>
-                      </div>
-                      <button class="mini-product__delete" aria-label="Delete product">
-                        <svg>
-                          <use xlink:href="./img/sprite.svg#delete"></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </article>
-                </li>
-              </ul>
+                    <button class="mini-product__delete" aria-label="Delete product">
+                      <svg>
+                        <use xlink:href="./img/sprite.svg#delete"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mini-cart__bottom">
+            <div class="mini-cart__itog">
+              <span class="mini-cart__txt">Total:</span>
+              <span class="mini-cart__sum">500 $</span>
             </div>
-            <div class="mini-cart__bottom">
-              <div class="mini-cart__itog">
-                <span class="mini-cart__txt">Total:</span>
-                <span class="mini-cart__summ">500 $</span>
-              </div>
-              <button class="mini-cart__button button">Go to cart</button>
-            </div>
+            <button class="mini-cart__button button">Go to cart</button>
           </div>
         </div>
-        <!-- ============================= MODAL WINDOW ============================== -->
+
+        <!-- ========== MODAL WINDOW =========== -->
         <div class="modal">
           <div class="modal__container" data-target="login">
+
             <button class="modal__close" type="button">
               <svg class="modal__icon">
                 <use xlink:href="img/sprite.svg#close"></use>
               </svg>
             </button>
+
             <div class="modal__content">
               <h2 class="modal__title">
                 Sign In
@@ -189,11 +227,23 @@
             <div class="modal__content"></div>
           </div>
         </div>
-        <!-- ============================= MODAL WINDOW ============================== -->
-        <!-- ================================ BURGER ================================= -->
+        
+        <!-- ============ BURGER =============== -->
         <button class="burger" type="button">
           <span></span>
         </button>
       </div>
-    </nav>
+    </div>
+
+    <div class="nav__bottom">
+      <div class="container">
+        <p class="nav__sale-text">
+            Up to 70% Off.
+            <a class="nav__sale-link" href="#">
+              Shop our latest sale styles
+            </a>
+          </p>
+      </div>
+    </div>
+  </nav>
 </header>
