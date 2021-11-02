@@ -59,6 +59,7 @@ body.lock {
 }
 
 .title {
+  font-weight: 900;
   @include adaptive-value('font-size', 46, 20, 1);
   line-height: 1.3;
   @include line-clamp(46, 1.3, 3);

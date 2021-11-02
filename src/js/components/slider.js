@@ -3,24 +3,24 @@
 // ======= npm i swiper ====== \\
 // =========================== \\
 
-const swiper = new Swiper('.accesories__slider', {
+const swiper = new Swiper('.arrivals__slider', {
   // option
-  slidesPerView: 5,
-  spaceBetween: 20,
-  loop: true,
-  mousewheel: true,
+  spaceBetween: 30,
   grabCursor: true,
+  loop: true,
+  slidesPerView: 'auto',
+  centeredSlides: true,
 
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
 
   // Pagination, dots
   pagination: {
@@ -31,27 +31,32 @@ const swiper = new Swiper('.accesories__slider', {
   breakpoints: {
     0: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
-    500: {
+    600: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
-    640: {
+    700: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 30,
     },
-    768: {
+    800: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
-    900: {
+    1000: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
-    1024: {
+    1250: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
+    1400: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+    },
+
   },
 });
