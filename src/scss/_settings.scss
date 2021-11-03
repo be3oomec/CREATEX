@@ -122,6 +122,10 @@ body.lock {
       box-shadow: inset 0px 4px 4px rgba($black, 0.25);
     }
   }
+
+  &--form {
+    padding: 0.8rem 2.5rem;
+  }
 }
 
 // ================ OPTIONS ==================== \\

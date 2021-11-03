@@ -1,5 +1,5 @@
 .categories {
-  margin-bottom: $m180;
+  @include adaptive-value('margin-bottom', 180, 80, 1);
 }
 
 .categories__list {
