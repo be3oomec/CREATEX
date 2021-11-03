@@ -1,0 +1,59 @@
+.sale {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.sale__top {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sale__title {
+  max-width: 400px;
+}
+
+.sale__slider-btns {
+  display: flex;
+}
+
+.sale__slider-btns svg {
+  width: 18px;
+  height: 11px;
+}
+
+.sale__content {
+  margin-bottom: 80px;
+}
+
+.swiper-b-prev {
+  margin-right: 15px;
+}
+
+.swiper-b-prev,
+.swiper-b-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  transition: background-color 0.3s, fill 0.3s;
+
+  &:focus {
+    background-color: rgba($green, 0.5);
+    fill: $white;
+  }
+
+  &:hover {
+    background-color: $green;
+    fill: $white;
+  }
+}
+
+.swiper {
+  padding: 10px;
+}
