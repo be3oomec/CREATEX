@@ -1,0 +1,21 @@
+.blog {
+  margin-bottom: 120px;
+}
+
+.blog__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 30px;
+
+  @include _576 {
+    margin: 0 -15px
+  }
+}
+
