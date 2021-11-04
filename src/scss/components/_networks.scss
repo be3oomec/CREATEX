@@ -1,0 +1,56 @@
+.networks {
+  display: flex;
+  align-items: center;
+}
+
+.networks__item {
+  &:not(:last-child) {
+    margin-right: 12px;
+
+    @include _576 {
+      margin-right: 30px;
+    }
+  }
+}
+
+.networks__link {
+  width: 32px;
+  height: 32px;
+  background-color: $gray-800;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in-out;
+
+  &:focus {
+    background-color: $white;
+
+    .networks__icon {
+      fill: $green;
+    }
+  }
+
+  &:hover {
+    background-color: $white;
+
+    .networks__icon {
+      fill: $green;
+    }
+  }
+
+  &:active {
+    background-color: rgba($white, 0.5);
+
+    .networks__icon {
+      fill: $green-light;
+    }
+  }
+}
+
+.networks__icon {
+  width: 16px;
+  height: 16px;
+  fill: $white;
+  transition: fill 0.3s ease-in-out;
+}
