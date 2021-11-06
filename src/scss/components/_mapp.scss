@@ -45,11 +45,25 @@
 
 .mobile__link {
   display: inline-block;
+  transition: transform 0.3s;
+
   &:not(:last-child) {
     margin-right: 25px;
   }
 
   @include _992 {
     margin-bottom: 20px;
+  }
+
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.06);
   }
 }

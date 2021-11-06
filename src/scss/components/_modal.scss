@@ -15,6 +15,7 @@
   visibility: hidden;
   transition: opacity var(--transition-time), visibility var(--transition-time);
 }
+
 .modal::before {
   content: '';
   display: inline-block;
@@ -100,8 +101,6 @@
   background-color: transparent;
   border: 1px solid #000;
 }
-
-
 
 .modal.is-open {
   opacity: 1;

@@ -1,17 +1,53 @@
-.form {
-  margin-bottom: 20px;
+// .form {}
+
+.form__form {
+  margin-bottom: 40px;
   position: relative;
   max-width: 360px;
   width: 100%;
-
-  &--sub {
-    max-width: 495px;
-    width: 100%;
-  }
 }
 
-.form__radio {
+.form--sub {
+  max-width: 495px;
+  width: 100%;
+}
+
+.form__checkbox-block {
   margin-bottom: 32px;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form__checkbox-style {
+  font-weight: 700;
+  font-size: 14px;
+  color: $gray-700;
+  padding: 7px 16px;
+  background-color: transparent;
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.form__checkbox:focus + .form__checkbox-style {
+  border: 1px solid $green;
+}
+
+.form__checkbox-style:hover {
+  border: 1px solid $green;
+}
+
+.form__checkbox:checked + .form__checkbox-style {
+  border: 1px solid $green;
+  color: $white;
+  background-color: $green;
 }
 
 .form__label {
@@ -23,7 +59,6 @@
 
 .form__input {
   border: 1px solid $gray-400;
-  box-sizing: border-box;
   border-radius: 4px;
   max-width: 360px;
   width: 100%;
@@ -45,7 +80,6 @@
 .form__input--sub {
   max-width: 495px;
   width: 100%;
-  margin-bottom: 24px;
 }
 
 .form__button {
@@ -56,4 +90,45 @@
   font-size: 14px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  cursor: pointer;
+
+  margin-left: 30px;
+}
+
+.checkbox-style {
+  position: absolute;
+  background-color: $green;
+  border: 1px solid $green;
+  border-radius: 3px;
+  width: 16px;
+  height: 16px;
+  margin-left: -30px;
+  transition: border 0.3s;
+}
+
+.form__checkbox:focus + .checkbox-style {
+  border: 1px solid $green-light;
+}
+
+.checkbox-style:hover {
+  border: 1px solid $green-light;
+}
+
+.form__checkbox:checked + .checkbox-style::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 10px;
+  height: 8px;
+  background-image: url(../img/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }

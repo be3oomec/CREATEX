@@ -9,24 +9,41 @@
           Subscribe for exclusive early sale access and new arrivals.
         </p>
 
-        <form class="subscribe__form form form--sub" action="#">
-          <label><input class="form__radio" type="radio" name="radio" id="women"></label>
-          <label><input class="form__radio" type="radio" name="radio" id="men"></label>
-          <label><input class="form__radio" type="radio" name="radio" id="girls"></label>
-          <label><input class="form__radio" type="radio" name="radio" id="boys"></label>
+        <div class="subscribe__form form">
+          <div class="form__checkbox-block">
+            <label>
+              <input class="form__checkbox" type="checkbox" name="checkbox" id="women">
+              <span class="form__checkbox-style">Women</span>
+            </label>
+            <label>
+              <input class="form__checkbox" type="checkbox" name="checkbox" id="men">
+              <span class="form__checkbox-style">Men</span>
+            </label>
+            <label>
+              <input class="form__checkbox" type="checkbox" name="checkbox" id="girls">
+              <span class="form__checkbox-style">Girls</span>
+            </label>
+            <label>
+              <input class="form__checkbox" type="checkbox" name="checkbox" id="boys">
+              <span class="form__checkbox-style">Boys</span>
+            </label>
+          </div>
 
           <label class="form__label" for="sub">Email</label>
-          <input class="form__input form__input--sub" id="sub" type="email" name="email"
-            title="Please provide only a authentic e-mail address."
-            pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
-            placeholder="Your working email" required>
-          <button class="form__button button button--form" type="submit">Subscribe</button>
+          <form class="form__form form--sub" action="#">
+            <input class="form__input form__input--sub" id="sub" type="email" name="email"
+              title="Please provide only a authentic e-mail address."
+              pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+              placeholder="Your working email" required>
+            <button class="form__button button button--form" type="submit">Subscribe</button>
+          </form>
 
-          <input class="form__ckeckbox" type="checkbox" name="checkbox" id="checkbox">
-          <label for="checkbox">
+          <label class="checkbox">
+            <input class="form__checkbox" type="checkbox" name="checkbox" id="checkbox">
+            <span class="checkbox-style"></span>
             I agree to receive communications from Createx Store.
           </label>
-        </form>
+        </div>
       </div>
 
       <div class="subscribe__content">

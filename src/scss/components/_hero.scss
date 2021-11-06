@@ -61,6 +61,7 @@
 }
 
 .hero__link {
+  display: inline-block;
   &:not(:last-child) {
     margin-right: 24px;
 
@@ -70,6 +71,3 @@
   }
 }
 
-.button {
-  display: inline-block;
-}

@@ -14,6 +14,21 @@
   justify-content: space-between;
 }
 
+.nav__phone {
+  transition: color 0.3s ease-in-out;
+  &:focus {
+    color: $green-light;
+  }
+
+  &:hover {
+    color: $green-light;
+  }
+
+  &:active {
+    color: rgba($white, 0.8);
+  }
+}
+
 .nav__phone span {
   font-weight: 900;
 }
@@ -129,15 +144,12 @@
 }
 
 // =================
-// =================
-// =================
-// =================
 
 .nav__average {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .nav__logo {
@@ -152,9 +164,20 @@
 }
 
 .nav__item {
+  padding: 20px 0;
   &:not(:last-child) {
     margin-right: 40px;
   }
+}
+
+.nav__item:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__item:focus-within > .submenu {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav__link {
@@ -167,12 +190,16 @@
   }
 
   &:hover {
-    color: $red;
+    color: rgba($green, 0.5);
   }
 
   &:active {
     opacity: 0.5;
   }
+}
+
+.nav__link--sale {
+  color: $red;
 }
 
 .nav__search {
@@ -296,9 +323,6 @@
   }
 }
 
-// ====================
-// ====================
-// ====================
 // ====================
 
 .nav__bottom {

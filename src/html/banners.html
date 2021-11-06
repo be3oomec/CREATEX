@@ -20,11 +20,13 @@
       <p class="banners__subtitle">For All new Email Subscribers</p>
       <h3 class="banners__title">Get 5% Off & Free Delivery</h3>
 
-      <label class="form__label" for="email">Email</label>
-      <form class="banners__form form" action="#">
-        <input class="form__input" id="email" type="email" name="email" title="Please provide only a authentic e-mail address." pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your working email" required>
-        <button class="form__button button button--form" type="submit">Subscribe</button>
-      </form>
+      <div class="banners__form form">
+        <label class="form__label" for="email">Email</label>
+        <form class="form__form" action="#">
+          <input class="form__input" id="email" type="email" name="email" title="Please provide only a authentic e-mail address." pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your working email" required>
+          <button class="form__button button button--form" type="submit">Subscribe</button>
+        </form>
+      </div>
 
       <p class="banners__text">*Sign up to be the first to hear about exclusive deals, special offers and upcoming collections.</p>
     </li>
