@@ -39,7 +39,7 @@
 
       width: 1px;
       height: 100%;
-      background-image: url(../../img/divider.jpg);
+      background-image: url(../img/divider.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -49,25 +49,25 @@
 
 .services__item--fast {
   &::before {
-    background-image: url(../../img/delivery.svg);
+    background-image: url(../img/delivery.svg);
   }
 }
 
 .services__item--support {
   &::before {
-    background-image: url(../../img/support.svg);
+    background-image: url(../img/support.svg);
   }
 }
 
 .services__item--guarantee {
   &::before {
-    background-image: url(../../img/ic-shield.svg);
+    background-image: url(../img/ic-shield.svg);
   }
 }
 
 .services__item--secure {
   &::before {
-    background-image: url(../../img/ic-credit-card.svg);
+    background-image: url(../img/ic-credit-card.svg);
   }
 }
 
