@@ -22,8 +22,12 @@
           </div>
 
           <div class="nav__user">
-            <button class="nav__login">Log in</button>
-            <button class="nav__register">Register</button>
+            <button class="nav__login" type="button" data-path="login" data-animation="fade" data-speed="300">
+              Log in
+            </button>
+            <button class="nav__register" type="button" data-path="signup" data-animation="fade" data-speed="300">
+              Register
+            </button>
           </div>
         </div>
       </div>
@@ -384,6 +388,7 @@
           </button>
         </div>
 
+        <!-- ========== Mini-cart =========== -->
         <div class="mini-cart">
           <div class="mini-cart__top" data-simplebar>
             <ul class="mini-cart__list">
@@ -493,38 +498,207 @@
         <!-- ========== MODAL WINDOW =========== -->
         <div class="modal">
           <div class="modal__container" data-target="login">
+            <div class="modal__top">
+              <button class="modal__close" type="button">
+                <svg class="modal__icon">
+                  <use xlink:href="../img/sprite.svg#close"></use>
+                </svg>
+              </button>
 
-            <button class="modal__close" type="button">
-              <svg class="modal__icon">
-                <use xlink:href="img/sprite.svg#close"></use>
-              </svg>
-            </button>
+              <div class="modal__content">
+                <h2 class="modal__title">
+                  Sign In
+                </h2>
+                <p class="modal__subtitle">
+                  Sign in to your account using email and password provided during registration.
+                </p>
 
-            <div class="modal__content">
-              <h2 class="modal__title">
-                Sign In
-              </h2>
+                <form class="modal__form" action="#">
+                  <div class="modal__block">
+                    <label class="modal__label" for="modalemail">Email</label>
+                    <input class="modal__input" type="email" name="email" id="modalemail" title="Please provide only a authentic e-mail address." pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your working email" required>
 
-              <form class="modal__form" action="#">
-                <div class="modal__block">
-                  <label class="modal__label" for="name">Your Login</label>
-                  <input class="modal__input modal__input--name" type="text" name="name" id="name" required>
-                  <label class="modal__label" for="password">Your Password</label>
-                  <input class="modal__input" type="password" name="password" id="password" required>
+                    <div class="modal__pass">
+                      <label class="modal__label" for="password">Password</label>
+                      <input class="modal__input modal__input--password" type="password" name="password" id="password" required>
+                      <button class="modal__btn-vision" type="button">
+                        <svg class="modal__vision-icon">
+                          <use xlink:href="../img/sprite.svg#pass"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="modal__block-checkbox">
+                    <label class="modal__label-check">
+                      <input class="modal__checkbox" type="checkbox" name="checkbox" id="modalcheck">
+                      <span class="checkbox-style"></span>
+                      Keep me signed in
+                    </label>
+
+                    <a class="modal__ref" href="#">
+                      Forgot password?
+                    </a>
+                  </div>
+
+                  <button class="modal__btn button" type="submit">
+                    Sign in
+                  </button>
+                </form>
+
+                <div class="modal__sign-up">
+                  <span>Don't have an account?</span>
+                  <a class="modal__ref" href="#">
+                    Sign up
+                  </a>
                 </div>
+              </div>
+            </div>
 
-                <button class="modal__btn" type="submit">Login</button>
-              </form>
+            <div class="modal__bottom">
+              <span class="modal__sign-in">
+                Or sign in with
+              </span>
+
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#Facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#google"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#Twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
-          <div class="modal__container" data-target="cart">
-            <button class="modal__close" type="button">
-              <svg class="modal__icon">
-                <use xlink:href="img/sprite.svg#close"></use>
-              </svg>
-            </button>
-            <div class="modal__content"></div>
+          <div class="modal__container" data-target="signup">
+            <div class="modal__top">
+              <button class="modal__close" type="button">
+                <svg class="modal__icon">
+                  <use xlink:href="../img/sprite.svg#close"></use>
+                </svg>
+              </button>
+
+              <div class="modal__content">
+                <h2 class="modal__title">
+                  Sign up
+                </h2>
+                <p class="modal__subtitle">
+                  Registration takes less than a minute but gives you full control over your orders.
+                </p>
+
+                <form class="modal__form" action="#">
+                  <div class="modal__block">
+                    <label class="modal__label" for="name">Full Name</label>
+                    <input class="modal__input" type="text" name="name" id="name" placeholder="Your full name" required>
+
+                    <label class="modal__label" for="modalemail">Email</label>
+                    <input class="modal__input" type="email" name="email" id="modalemail"
+                      title="Please provide only a authentic e-mail address."
+                      pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+                      placeholder="Your working email" required>
+
+                    <div class="modal__pass">
+                      <label class="modal__label" for="password">Password</label>
+                      <input class="modal__input modal__input--password" type="password" name="password" id="password" required>
+                      <button class="modal__btn-vision" type="button">
+                        <svg class="modal__vision-icon">
+                          <use xlink:href="../img/sprite.svg#pass"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div class="modal__pass">
+                      <label class="modal__label" for="confirm">Confirm Password</label>
+                      <input class="modal__input modal__input--password" type="password" name="password" id="confirm" required>
+                      <button class="modal__btn-vision" type="button">
+                        <svg class="modal__vision-icon">
+                          <use xlink:href="../img/sprite.svg#pass"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="modal__block-checkbox">
+                    <label class="modal__label-check">
+                      <input class="modal__checkbox" type="checkbox" name="checkbox" id="modalcheck">
+                      <span class="checkbox-style"></span>
+                      Remember me
+                    </label>
+                  </div>
+
+                  <button class="modal__btn button" type="submit">
+                    Sign up
+                  </button>
+                </form>
+
+                <div class="modal__sign-up">
+                  <span>Already have an account?</span>
+                  <a class="modal__ref" href="#">
+                    Sign in
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal__bottom">
+              <span class="modal__sign-in">
+                Or sign in with
+              </span>
+
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#Facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#google"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#Twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="modal__item">
+                  <a class="modal__link" href="#">
+                    <svg class="modal__icon">
+                      <use xlink:href="../img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
