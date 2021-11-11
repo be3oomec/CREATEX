@@ -1,0 +1,1 @@
+let select = NiceSelect.bind(document.getElementById("rating"));

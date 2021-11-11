@@ -66,7 +66,6 @@
   }
 }
 
-
 .modal__icon {
   width: 25px;
   height: 25px;
@@ -95,6 +94,7 @@
   max-width: 390px;
 }
 
+.modal__review,
 .modal__input {
   border: 1px solid #D7DADD;
   border-radius: 4px;
@@ -294,6 +294,51 @@
   height: 14px;
   fill: $gray-700;
 }
+
+.modal__rating {
+  margin-bottom: 20px;
+}
+
+.modal__upload {
+  border: 1px dashed #D7DADD;
+  border-radius: 4px;
+  max-width: 390px;
+  width: 100%;
+  padding: 24px 0;
+  margin-bottom: 20px;
+}
+
+.modal__upload-icon {
+  width: 21px;
+  height: 21px;
+  margin-bottom: 12px;
+}
+
+.modal__upload-text {
+  font-size: 12px;
+  color: $gray-800;
+  margin-bottom: 20px;
+}
+
+.modal__upload-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.modal__upload-button {
+  display: inline-block;
+  padding: 8px 24px;
+  margin: 0 auto;
+}
+
+.modal__review {
+  min-height: 100px;
+  resize: none;
+}
+
 
 
 

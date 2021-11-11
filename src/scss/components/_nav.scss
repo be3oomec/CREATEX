@@ -47,35 +47,35 @@
   position: relative;
 
   &::before {
-     content: '';
-     position: absolute;
-     bottom: -5px;
-     left: 0;
-     right: 0;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
 
-     width: 0%;
-     height: 1px;
+    width: 0%;
+    height: 1px;
 
-     background-color: $white;
-     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s width;
+    background-color: $white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s width;
   }
 
   &:focus {
-     &::before {
-       width: 40%;
-     }
+    &::before {
+      width: 40%;
+    }
   }
 
   &:hover {
-     &::before {
-       width: 100%;
-     }
+    &::before {
+      width: 100%;
+    }
   }
 
   &:active {
-     &::before {
-       width: 50%;
-     }
+    &::before {
+      width: 50%;
+    }
   }
 }
 
@@ -123,7 +123,23 @@
   }
 }
 
-.nav__login {
+.nav__sign-btn {
+  transition: color 0.3s;
+
+  &:focus {
+    color: $green-light;
+  }
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    color: rgba($green-light, 0.5);
+  }
+}
+
+.nav__sign-btn--login {
   margin-right: 16px;
   position: relative;
 
@@ -299,6 +315,7 @@
   background-color: $green-light;
   border-radius: 4px;
   padding: 4px 8px;
+  pointer-events: none;
 }
 
 .nav__btn {
@@ -321,6 +338,10 @@
       fill: $green-light;
     }
   }
+}
+
+.nav__icon {
+  pointer-events: none;
 }
 
 // ====================

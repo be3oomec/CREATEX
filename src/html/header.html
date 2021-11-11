@@ -22,10 +22,10 @@
           </div>
 
           <div class="nav__user">
-            <button class="nav__login" type="button" data-path="login" data-animation="fade" data-speed="300">
+            <button class="nav__sign-btn nav__sign-btn--login" type="button" data-path="login" data-animation="fade" data-speed="300">
               Log in
             </button>
-            <button class="nav__register" type="button" data-path="signup" data-animation="fade" data-speed="300">
+            <button class="nav__sign-btn nav__sign-btn--register" type="button" data-path="signup" data-animation="fade" data-speed="300">
               Register
             </button>
           </div>
@@ -374,125 +374,18 @@
         </form>
 
         <div class="nav__categories">
-          <a class="nav__average-link" href="#" data-path="favorites" data-animation="fade" data-speed="300" aria-label="Link on favorites product">
+          <a class="nav__average-link" href="#" data-path="review" data-animation="fade" data-speed="300" aria-label="Link on favorites product">
             <svg class="nav__icon nav__icon--fav" aria-hidden="true">
               <use xlink:href="./img/sprite.svg#favorite"></use>
             </svg>
             <span>2</span>
           </a>
-          <button class="nav__btn" type="button" data-path="cart" data-animation="fade" data-speed="300" aria-label="Link on cart site">
+          <button class="nav__btn" type="button" aria-label="Link on cart site">
             <svg class="nav__icon nav__icon--cart" aria-hidden="true">
               <use xlink:href="./img/sprite.svg#cart"></use>
             </svg>
             <span class="nav__count-cart">4</span>
           </button>
-        </div>
-
-        <!-- ========== Mini-cart =========== -->
-        <div class="mini-cart">
-          <div class="mini-cart__top" data-simplebar>
-            <ul class="mini-cart__list">
-              <li class="mini-cart__item">
-                <article class="mini-cart__product mini-product">
-                  <div class="mini-product__image">
-                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Stealth"> -->
-                  </div>
-                  <div class="mini-product__content">
-                    <div class="mini-product__text">
-                      <h3 class="mini-product__title">
-                        Boosted Stealth
-                      </h3>
-                      <span class="mini-product____price">
-                        $1,279.00
-                      </span>
-                    </div>
-                    <button class="mini-product__delete" aria-label="Delete product">
-                      <svg>
-                        <use xlink:href="./img/sprite.svg#delete"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </article>
-              </li>
-
-              <li class="mini-cart__item">
-                <article class="mini-cart__product mini-product">
-                  <div class="mini-product__image">
-                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Stealth"> -->
-                  </div>
-                  <div class="mini-product__content">
-                    <div class="mini-product__text">
-                      <h3 class="mini-product__title">
-                        Boosted Stealth
-                      </h3>
-                      <span class="mini-product____price">
-                        $1,279.00
-                      </span>
-                    </div>
-                    <button class="mini-product__delete" aria-label="Delete product">
-                      <svg>
-                        <use xlink:href="./img/sprite.svg#delete"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </article>
-              </li>
-
-              <li class="mini-cart__item">
-                <article class="mini-cart__product mini-product">
-                  <div class="mini-product__image">
-                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Mini X"> -->
-                  </div>
-                  <div class="mini-product__content">
-                    <div class="mini-product__text">
-                      <h3 class="mini-product__title">
-                        Boosted Mini X
-                      </h3>
-                      <span class="mini-product____price">
-                        $1,579.00
-                      </span>
-                    </div>
-                    <button class="mini-product__delete" aria-label="Delete product">
-                      <svg>
-                        <use xlink:href="./img/sprite.svg#delete"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </article>
-              </li>
-
-              <li class="mini-cart__item">
-                <article class="mini-cart__product mini-product">
-                  <div class="mini-product__image">
-                    <!-- <img src="./img/cart1.jpg" alt="product electric skateboards Boosted Plus v3"> -->
-                  </div>
-                  <div class="mini-product__content">
-                    <div class="mini-product__text">
-                      <h3 class="mini-product__title">
-                        Boosted Plus v3
-                      </h3>
-                      <span class="mini-product____price">
-                        $1,379.00
-                      </span>
-                    </div>
-                    <button class="mini-product__delete" aria-label="Delete product">
-                      <svg>
-                        <use xlink:href="./img/sprite.svg#delete"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </article>
-              </li>
-            </ul>
-          </div>
-
-          <div class="mini-cart__bottom">
-            <div class="mini-cart__itog">
-              <span class="mini-cart__txt">Total:</span>
-              <span class="mini-cart__sum">500 $</span>
-            </div>
-            <button class="mini-cart__button button">Go to cart</button>
-          </div>
         </div>
 
         <!-- ========== MODAL WINDOW =========== -->
@@ -515,8 +408,8 @@
 
                 <form class="modal__form" action="#">
                   <div class="modal__block">
-                    <label class="modal__label" for="modalemail">Email</label>
-                    <input class="modal__input" type="email" name="email" id="modalemail" title="Please provide only a authentic e-mail address." pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your working email" required>
+                    <label class="modal__label" for="signInEmail">Email</label>
+                    <input class="modal__input" type="email" name="email" id="signInEmail" title="Please provide only a authentic e-mail address." pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" placeholder="Your working email" required>
 
                     <div class="modal__pass">
                       <label class="modal__label" for="password">Password</label>
@@ -614,15 +507,15 @@
                     <label class="modal__label" for="name">Full Name</label>
                     <input class="modal__input" type="text" name="name" id="name" placeholder="Your full name" required>
 
-                    <label class="modal__label" for="modalemail">Email</label>
-                    <input class="modal__input" type="email" name="email" id="modalemail"
+                    <label class="modal__label" for="signUpEmail">Email</label>
+                    <input class="modal__input" type="email" name="email" id="signUpEmail"
                       title="Please provide only a authentic e-mail address."
                       pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
                       placeholder="Your working email" required>
 
                     <div class="modal__pass">
-                      <label class="modal__label" for="password">Password</label>
-                      <input class="modal__input modal__input--password" type="password" name="password" id="password" required>
+                      <label class="modal__label" for="pass">Password</label>
+                      <input class="modal__input modal__input--password" type="password" name="password" id="pass" required>
                       <button class="modal__btn-vision" type="button">
                         <svg class="modal__vision-icon">
                           <use xlink:href="./img/sprite.svg#pass"></use>
@@ -643,7 +536,7 @@
 
                   <div class="modal__block-checkbox">
                     <label class="modal__label-check">
-                      <input class="modal__checkbox" type="checkbox" name="checkbox" id="modalcheck">
+                      <input class="modal__checkbox" type="checkbox" name="checkbox">
                       <span class="checkbox-style"></span>
                       Remember me
                     </label>
@@ -700,12 +593,329 @@
               </ul>
             </div>
           </div>
+
+          <div class="modal__container" data-target="review">
+            <div class="modal__top">
+              <button class="modal__close" type="button">
+                <svg class="modal__icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+              </button>
+
+              <div class="modal__content">
+                <h2 class="modal__title">
+                  Leave a review
+                </h2>
+
+                <form class="modal__form" action="#">
+                  <div class="modal__block">
+                    <label class="modal__label" for="name-rev">
+                      Name
+                    </label>
+                    <input class="modal__input" type="text" name="name" id="name-rev" placeholder="Your name" required>
+
+                    <label class="modal__label" for="revEmail">
+                      Email
+                    </label>
+                    <input class="modal__input" type="email" name="email" id="revEmail"
+                      title="Please provide only a authentic e-mail address."
+                      pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+                      placeholder="Your working email" required>
+
+                    <label class="modal__label" for="rating">
+                      Rating
+                    </label>
+                    <select class="modal__rating wide" id="rating">
+                      <option data-display="Select">Choose rating</option>
+                      <option value="1">1 stars</option>
+                      <option value="2">2 stars</option>
+                      <option value="3">3 stars</option>
+                      <option value="4">4 stars</option>
+                      <option value="5">5 stars</option>
+                    </select>
+
+                    <label class="modal__label" for="btnUp">
+                      Upload a photo or video (optional)
+                    </label>
+                    <div class="modal__upload" id="upload">
+                      <svg class="modal__upload-icon">
+                        <use xlink:href="../img/sprite.svg#upload"></use>
+                      </svg>
+                      <p class="modal__upload-text">
+                        Drag and drop here to upload
+                      </p>
+                      <input class="modal__upload-input" type="file" name="upload" id="btnUp">
+                      <label class="modal__upload-button button button--white" id="btnUpload" for="btnUp">
+                        Or select file
+                      </label>
+                    </div>
+
+                    <label class="modal__label" for="review">
+                      Review
+                    </label>
+                    <textarea class="modal__review" name="review" id="review" placeholder="Your review"></textarea>
+                  </div>
+
+                  <button class="modal__btn button" type="submit">
+                    Submit a review
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- ========== MODAL WINDOW =========== -->
+
+        <!-- ========== MINI-CART =========== -->
+        <div class="mini-cart">
+          <div class="mini-cart__wrap">
+            <div class="mini-cart__top">
+              <h3 class="mini-cart__title">
+                Your cart (4)
+              </h3>
+              <button class="mini-cart__close" type="button">
+                <svg class="mini-cart__icon">
+                  <use xlink:href="./img/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="mini-cart__content" data-simplebar>
+              <ul class="mini-cart__list">
+                <li class="mini-cart__item">
+                  <div class="mini-cart__image">
+                    <img class="mini-cart__img" src="./img/mini-cart1.png" alt="Basic hooded sweatshirt in pink" width="80" height="80">
+                  </div>
+                  <div class="mini-cart__info">
+                    <h4 class="mini-cart__heading">
+                      Basic hooded sweatshirt in pink
+                    </h4>
+
+                    <span class="mini-cart__color">
+                      Color: pink
+                    </span>
+
+                    <span class="mini-cart__size">
+                      Size: S
+                    </span>
+
+                    <div class="mini-cart__count">
+                      <div class="mini-cart__stepper stepper">
+                        <label class="stepper__field">
+                          <input class="stepper__input" value="1" maxlength="3" type="text" name="count">
+                          <span class="stepper__text">pcs</span>
+                        </label>
+                        <div class="stepper__btns">
+                          <button class="stepper__btn stepper__btn--up" aria-label="increase">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-up"></use>
+                            </svg>
+                          </button>
+                          <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="decrease">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <span class="mini-cart__price mini-cart__price--sale">
+                        $15.50
+                      </span>
+                      <span class="mini-cart__price mini-cart__price--old">
+                        $31.00
+                      </span>
+                    </div>
+
+                    <a class="mini-cart__link" href="#">
+                      <span class="mini-cart__link-text">Move to</span>
+                      <svg class="mini-cart__fav">
+                        <use xlink:href="../img/sprite.svg#favorite"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <button class="mini-cart__delete">
+                    <svg class="mini-cart__icon-del">
+                      <use xlink:href="../img/sprite.svg#delete"></use>
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="mini-cart__item">
+                  <div class="mini-cart__image">
+                    <img class="mini-cart__img" src="./img/mini-cart2.png" alt="Black and white sport cap" width="80" height="80">
+                  </div>
+                  <div class="mini-cart__info">
+                    <h4 class="mini-cart__heading">
+                      Black and white sport cap
+                    </h4>
+
+                    <div class="mini-cart__count">
+                      <div class="mini-cart__stepper stepper">
+                        <label class="stepper__field">
+                          <input class="stepper__input" value="1" maxlength="3" type="text" name="count">
+                          <span class="stepper__text">pcs</span>
+                        </label>
+                        <div class="stepper__btns">
+                          <button class="stepper__btn stepper__btn--up" aria-label="increase">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-up"></use>
+                            </svg>
+                          </button>
+                          <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="decrease">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <span class="mini-cart__price">
+                        $18.50
+                      </span>
+                    </div>
+
+                    <a class="mini-cart__link" href="#">
+                      <span class="mini-cart__link-text">Move to</span>
+                      <svg class="mini-cart__fav">
+                        <use xlink:href="../img/sprite.svg#favorite"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <button class="mini-cart__delete">
+                    <svg class="mini-cart__icon-del">
+                      <use xlink:href="../img/sprite.svg#delete"></use>
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="mini-cart__item">
+                  <div class="mini-cart__image">
+                    <img class="mini-cart__img" src="./img/mini-cart3.png" alt="Mid-rise slim cropped fit jeans" width="80" height="80">
+                  </div>
+                  <div class="mini-cart__info">
+                    <h4 class="mini-cart__heading">
+                      Mid-rise slim cropped fit jeans
+                    </h4>
+
+                    <span class="mini-cart__size">
+                      Size: M
+                    </span>
+
+                    <div class="mini-cart__count">
+                      <div class="mini-cart__stepper stepper">
+                        <label class="stepper__field">
+                          <input class="stepper__input" value="1" maxlength="3" type="text" name="count">
+                          <span class="stepper__text">pcs</span>
+                        </label>
+                        <div class="stepper__btns">
+                          <button class="stepper__btn stepper__btn--up" aria-label="increase">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-up"></use>
+                            </svg>
+                          </button>
+                          <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="decrease">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <span class="mini-cart__price">
+                        $80.50
+                      </span>
+                    </div>
+
+                    <a class="mini-cart__link" href="#">
+                      <span class="mini-cart__link-text">Move to</span>
+                      <svg class="mini-cart__fav">
+                        <use xlink:href="../img/sprite.svg#favorite"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <button class="mini-cart__delete">
+                    <svg class="mini-cart__icon-del">
+                      <use xlink:href="../img/sprite.svg#delete"></use>
+                    </svg>
+                  </button>
+                </li>
+
+                <li class="mini-cart__item">
+                  <div class="mini-cart__image">
+                    <img class="mini-cart__img" src="./img/mini-cart4.png" alt="Men fashion gray shoes" width="80" height="80">
+                  </div>
+                  <div class="mini-cart__info">
+                    <h4 class="mini-cart__heading">
+                      Men fashion gray shoes
+                    </h4>
+
+                    <span class="mini-cart__color">
+                      Color: gray
+                    </span>
+
+                    <span class="mini-cart__size">
+                      Size: 44
+                    </span>
+
+                    <div class="mini-cart__count">
+                      <div class="mini-cart__stepper stepper">
+                        <label class="stepper__field">
+                          <input class="stepper__input" value="1" maxlength="3" type="text" name="count">
+                          <span class="stepper__text">pcs</span>
+                        </label>
+                        <div class="stepper__btns">
+                          <button class="stepper__btn stepper__btn--up" aria-label="increase">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-up"></use>
+                            </svg>
+                          </button>
+                          <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="decrease">
+                            <svg class="stepper__icon">
+                              <use xlink:href="../img/sprite.svg#arrow-down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <span class="mini-cart__price">
+                        $85.50
+                      </span>
+                    </div>
+
+                    <a class="mini-cart__link" href="#">
+                      <span class="mini-cart__link-text">Move to</span>
+                      <svg class="mini-cart__fav">
+                        <use xlink:href="../img/sprite.svg#favorite"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <button class="mini-cart__delete">
+                    <svg class="mini-cart__icon-del">
+                      <use xlink:href="../img/sprite.svg#delete"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="mini-cart__bottom">
+              <div class="mini-cart__total">
+                <span class="mini-cart__subtotal">Subtotal:</span>
+                <span class="mini-cart__payment">$198.65</span>
+              </div>
+              <button class="mini-cart__button button">
+                <svg class="mini-cart__btn-icon">
+                  <use xlink:href="../img/sprite.svg#card"></use>
+                </svg>
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- ========== MINI-CART =========== -->
 
         <!-- ============ BURGER =============== -->
         <button class="burger" type="button">
           <span></span>
         </button>
+        <!-- ============ BURGER =============== -->
       </div>
     </div>
 
