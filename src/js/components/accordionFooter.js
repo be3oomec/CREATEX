@@ -2,7 +2,7 @@
 // ============ ACCORDION =========== \\
 // ================================== \\
 
-const accordions = document.querySelectorAll('.footer__item');
+const accordions = document.querySelectorAll('.footer__col');
 
 accordions.forEach(el => {
   el.addEventListener('click', (e) => {

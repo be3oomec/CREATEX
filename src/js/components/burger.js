@@ -3,7 +3,7 @@
 // ================================== \\
 
 const burger = document.querySelector('.burger');
-const menu = document.querySelector('.header__menu');
+const menu = document.querySelector('.nav__list');
 
 if (burger) {
   burger.addEventListener('click', function(e) {

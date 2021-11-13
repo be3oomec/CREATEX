@@ -20,6 +20,7 @@
   }
 }
 
+.footer__col,
 .footer__item {
   display: flex;
   flex-direction: column;
@@ -43,6 +44,10 @@
   margin-bottom: 12px;
   color: $white;
   @include line-clamp(16, 1.6, 2);
+
+  @include _576 {
+    cursor: pointer;
+  }
 }
 
 .footer__nav-list {
@@ -50,11 +55,13 @@
   @include _576 {
     max-height: 0;
     opacity: 0;
+    visibility: hidden;
   }
 }
 
 .open .footer__nav-list {
   opacity: 1;
+  visibility: visible;
 }
 
 .footer__nav-item {

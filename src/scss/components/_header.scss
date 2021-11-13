@@ -30,7 +30,7 @@
     cursor: pointer;
   }
 
-  .header__menu.active {
+  .nav__list.active {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@
     flex-direction: column;
     justify-content: center;
 
-    background-color: rgba($black, 0.95);
+    background-color: rgba($green, 0.95);
     z-index: 101 !important;
 
     margin: 0;
@@ -51,10 +51,11 @@
     overflow: auto;
 
     transform: translate(0%);
-    transition: all 0.3s;
+    transition: translate 0.3s;
   }
 
   @include _992 {
+
     .burger {
       display: block;
       height: 20px;
@@ -116,13 +117,26 @@
       }
     }
 
-    .header__menu {
+    .nav__list {
       position: absolute;
-      transform: translate(-100%);
+      transform: translate(-200%);
     }
 
-    .header__link {
+    .nav__link {
       @include adaptive-value('font-size', 20, 15, 1);
+      color: $white;
+
+      &:focus {
+        color: $green-light;
+      }
+
+      &:hover {
+        color: rgba($white, 0.5);
+      }
+
+      &:active {
+        color: rgba($red, 0.5);
+      }
     }
   }
 }

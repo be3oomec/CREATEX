@@ -27,14 +27,57 @@
   &:active {
     color: rgba($white, 0.8);
   }
+
+  @include _576 {
+    display: none;
+  }
 }
 
 .nav__phone span {
   font-weight: 900;
 }
 
+.nav__phone-hide {
+  width: 20px;
+  height: 20px;
+  display: none;
+
+  @include _576 {
+    display: block;
+  }
+
+  &:focus {
+    .nav__phone-icon {
+      fill: $green-light;
+    }
+  }
+
+  &:hover {
+    .nav__phone-icon {
+      fill: $green-light;
+    }
+  }
+
+  &:active {
+    .nav__phone-icon {
+      fill: rgba($white, 0.8);
+    }
+  }
+}
+
+.nav__phone-icon {
+  width: 20px;
+  height: 20px;
+  fill: $white;
+  transition: fill 0.3s;
+}
+
 .nav__top-list {
   display: flex;
+
+  @include _992 {
+    display: none;
+  }
 }
 
 .nav__top__item {
@@ -160,12 +203,14 @@
 }
 
 // =================
-
 .nav__average {
+  background-color: #fff;
+}
+
+.nav__average-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
 }
 
 .nav__logo {
@@ -182,7 +227,7 @@
 .nav__item {
   padding: 20px 0;
   &:not(:last-child) {
-    margin-right: 40px;
+    @include adaptive-value('margin-right', 40, 0, 1);
   }
 }
 
@@ -221,6 +266,7 @@
 .nav__search {
   margin-right: 10px;
   position: relative;
+  z-index: 10;
 
   &::after {
     content: '';
@@ -236,10 +282,41 @@
     background-size: cover;
     background-position: center;
   }
+
+  @include _992 {
+    position: absolute;
+    top: 83%;
+    right: 7%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hide {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__mobile-search {
+  width: 20px;
+  height: 20px;
+  display: none;
+
+  @include _992 {
+    display: block;
+  }
+}
+
+.nav__mobile-icon {
+  width: 20px;
+  height: 20px;
+  fill: $black;
+  pointer-events: none;
 }
 
 .nav__input {
-  min-width: 380px;
+  @include adaptive-value('min-width', 380, 0, 1);
   width: 100%;
   border: 1px solid $gray-400;
   border-radius: 4px;
