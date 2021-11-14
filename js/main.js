@@ -258,16 +258,13 @@ var modal = new Modal({
 });
 "use strict";
 
-// =========================== \\
-// ========== SWIPER ========= \\
-// ======= npm i swiper ====== \\
-// =========================== \\
 var swiper = new Swiper('.arrivals__slider', {
   // option
-  grabCursor: true,
   loop: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   centeredSlides: true,
+  grabCursor: true,
+  spaceBetween: 30,
   // Pagination, dots
   pagination: {
     el: ".swiper-pagination",
@@ -276,6 +273,9 @@ var swiper = new Swiper('.arrivals__slider', {
   breakpoints: {
     0: {
       slidesPerView: 1
+    },
+    321: {
+      slidesPerView: 1.5
     },
     600: {
       slidesPerView: 2
@@ -301,36 +301,25 @@ var swiper = new Swiper('.arrivals__slider', {
 
 var swiper = new Swiper('.sale__content', {
   // option
-  spaceBetween: 30,
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: "auto",
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  grabCursor: true,
+  spaceBetween: 30,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-b-next',
     prevEl: '.swiper-b-prev'
   },
-  // Pagination, dots
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
   breakpoints: {
     0: {
-      slidesPerView: 1,
-      spaceBetween: 30
+      slidesPerView: 1
     },
     600: {
-      slidesPerView: 2,
-      spaceBetween: 20
+      slidesPerView: 2
     },
     993: {
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 3
     }
   }
 });
@@ -338,36 +327,25 @@ var swiper = new Swiper('.sale__content', {
 
 var swiper = new Swiper('.trending__content', {
   // option
-  spaceBetween: 30,
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: "auto",
   centeredSlides: true,
-  // autoplay: {
-  //   delay: 5000,
-  //   disableOnInteraction: false,
-  // },
+  grabCursor: true,
+  spaceBetween: 30,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-btn-next',
     prevEl: '.swiper-btn-prev'
   },
-  // Pagination, dots
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  // },
   breakpoints: {
     0: {
-      slidesPerView: 1,
-      spaceBetween: 30
+      slidesPerView: 1
     },
     600: {
-      slidesPerView: 2,
-      spaceBetween: 20
+      slidesPerView: 2
     },
     993: {
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 3
     }
   }
 });
