@@ -1,14 +1,10 @@
-// =========================== \\
-// ========== SWIPER ========= \\
-// ======= npm i swiper ====== \\
-// =========================== \\
-
 const swiper = new Swiper('.arrivals__slider', {
   // option
-  grabCursor: true,
   loop: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   centeredSlides: true,
+  grabCursor: true,
+  spaceBetween: 30,
 
   // Pagination, dots
   pagination: {
@@ -19,6 +15,9 @@ const swiper = new Swiper('.arrivals__slider', {
   breakpoints: {
     0: {
       slidesPerView: 1,
+    },
+    321: {
+      slidesPerView: 1.5,
     },
     600: {
       slidesPerView: 2,
