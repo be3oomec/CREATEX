@@ -1,0 +1,45 @@
+// .breadcrumbs {}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 33px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 40%;
+      right: -20px;
+      transform: translateY(-50%);
+
+      width: 6px;
+      height: 11px;
+
+      background-image: url(../img/right-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  color: $gray-800;
+
+  &:not([href]) {
+    color: $gray-600;
+  }
+}
+
+.breadcrumbs__icon {
+  width: 13px;
+  height: 14px;
+  fill: $gray-800;
+}

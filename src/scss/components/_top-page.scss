@@ -1,0 +1,14 @@
+.top-page {
+  font-size: 14px;
+  color: $gray-600;
+  background-color: $gray-200;
+
+  padding: 20px 0;
+  margin-bottom: 32px;
+}
+
+.top-page__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
