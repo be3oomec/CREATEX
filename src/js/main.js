@@ -1,4 +1,18 @@
 
+let slider = document.querySelector('#filters__price');
+if (slider) {
+  noUiSlider.create(slider, {
+      start: [20, 80],
+      connect: true,
+      range: {
+          'min': 0,
+          'max': 100
+      }
+  });
+}
+
+// ==============================================================
+
 const btnToTop = document.querySelector(".footer__gotop");
 let rootElement = document.documentElement;
 
@@ -24,3 +38,5 @@ btnSearch.addEventListener('click', () => {
 // ===============================================================
 
 let select = NiceSelect.bind(document.getElementById("rating"));
+
+// ===============================================================

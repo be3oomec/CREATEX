@@ -57,1088 +57,1421 @@
         </ul>
       </div>
 
-      <ul class="products-filters__products">
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+      <div class="products-filters__middle">
+        <ul class="products-filters__filter filters">
+          <li class="filters__item">
+            <button class="filters__control" aria-expanded="false">
+              <span class="filters__title">Clothes</span>
+              <span class="filters__icon"></span>
+            </button>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
+            <div class="filters__content" aria-hidden="true">
+              <label class="filters__label-search" for="search-clothes">
+                <input class="filters__search-clothes" type="search" name="search-clothes" id="search-clothes" placeholder="Search the clothes type">
+              </label>
 
-
-            <div class="product__img">
-              <img src="./img/product6.jpg" alt="Product glasses" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
+              <ul class="filters__clothes">
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="coats" id="clothes1">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Coats <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="jackets" id="clothes2">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Jackets <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="suits" id="clothes3">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Suits <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="dresses" id="clothes4">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Dresses <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="cardigans" id="clothes5">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Cardigans & sweaters <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="hoodies" id="clothes6">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Sweatshirts & hoodies <span>(16)</span></span>
+                  </label>
+                </li>
+              </ul>
             </div>
-
-            <h3 class="product__title">Metal bridge sunglasses</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$89.95</span>
-              <span class="product__price product__price--old">$40.80</span>
+          </li>
+          <li class="filters__item">
+            <button class="filters__control" aria-expanded="false">
+              <span class="filters__title">Size</span>
+              <span class="filters__icon"></span>
+            </button>
+            <div class="filters__content" aria-hidden="true">
+              <ul class="filters__size">
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="xs" id="size1">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">XS <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="s" id="size2">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">S <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="m" id="size3">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">M <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="l" id="size4">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">L <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="xl" id="size5">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">XL <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="plusSize" id="size6">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Plus Size <span>(16)</span></span>
+                  </label>
+                </li>
+              </ul>
             </div>
+          </li>
+          <li class="filters__item ">
+            <button class="filters__control" aria-expanded="false">
+              <span class="filters__title">Color</span>
+              <span class="filters__icon"></span>
+            </button>
+            <div class="filters__content" aria-hidden="true">
+              <div class="filters__colors colors">
+                <ul class="colors__list">
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="black">
+                      <span class="colors__radio-style colors__radio-style--black"></span>
+                      <span class="colors__text">Black</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="brown">
+                      <span class="colors__radio-style colors__radio-style--brown"></span>
+                      <span class="colors__text">Brown</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="white">
+                      <span class="colors__radio-style colors__radio-style--white"></span>
+                      <span class="colors__text">White</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="blue-gray">
+                      <span class="colors__radio-style colors__radio-style--blue-gray"></span>
+                      <span class="colors__text">Blue gray</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="yellow">
+                      <span class="colors__radio-style colors__radio-style--yellow"></span>
+                      <span class="colors__text">Yellow</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="red">
+                      <span class="colors__radio-style colors__radio-style--red"></span>
+                      <span class="colors__text">Red</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="dark-blue">
+                      <span class="colors__radio-style colors__radio-style--dark-blue"></span>
+                      <span class="colors__text">Dark blue</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="beige">
+                      <span class="colors__radio-style colors__radio-style--beige"></span>
+                      <span class="colors__text">Beige</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="gray">
+                      <span class="colors__radio-style colors__radio-style--gray"></span>
+                      <span class="colors__text">Gray</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="purple">
+                      <span class="colors__radio-style colors__radio-style--purple"></span>
+                      <span class="colors__text">Purple</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="green">
+                      <span class="colors__radio-style colors__radio-style--green"></span>
+                      <span class="colors__text">Green</span>
+                    </label>
+                  </li>
+                  <li class="colors__item">
+                    <label class="colors__label">
+                      <input class="colors__radio" type="radio" name="orange">
+                      <span class="colors__radio-style colors__radio-style--orange"></span>
+                      <span class="colors__text">Orange</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="filters__item">
+            <button class="filters__control" aria-expanded="false">
+              <span class="filters__title">Material</span>
+              <span class="filters__icon"></span>
+            </button>
+            <div class="filters__content" aria-hidden="true">
+              <label class="filters__label-search" for="search-clothes">
+                <input class="filters__search-clothes" type="search" name="search-clothes" id="search-clothes"
+                  placeholder="Search the clothes type">
+              </label>
 
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
+              <ul class="filters__clothes">
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="coats" id="clothes1">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Coats <span>(16)</span></span>
                   </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="jackets" id="clothes2">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Jackets <span>(16)</span></span>
                   </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="suits" id="clothes3">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Suits <span>(16)</span></span>
                   </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="dresses" id="clothes4">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Dresses <span>(16)</span></span>
                   </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="cardigans" id="clothes5">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Cardigans & sweaters <span>(16)</span></span>
                   </label>
-                </div>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="hoodies" id="clothes6">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Sweatshirts & hoodies <span>(16)</span></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="filters__item">
+            <button class="filters__control" aria-expanded="false">
+              <span class="filters__title">Brand</span>
+              <span class="filters__icon"></span>
+            </button>
+            <div class="filters__content" aria-hidden="true">
+              <label class="filters__label-search" for="search-clothes">
+                <input class="filters__search-clothes" type="search" name="search-clothes" id="search-clothes"
+                  placeholder="Search the clothes type">
+              </label>
 
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
+              <ul class="filters__clothes">
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="coats" id="clothes1">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Coats <span>(16)</span></span>
                   </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="jackets" id="clothes2">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Jackets <span>(16)</span></span>
                   </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="suits" id="clothes3">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Suits <span>(16)</span></span>
                   </label>
-                </div>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="dresses" id="clothes4">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Dresses <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="cardigans" id="clothes5">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Cardigans & sweaters <span>(16)</span></span>
+                  </label>
+                </li>
+                <li class="filters__select">
+                  <label class="filters__label">
+                    <input class="filters__checkbox" type="checkbox" name="hoodies" id="clothes6">
+                    <span class="filters__checkbox-style"></span>
+                    <span class="filters__checkbox-info">Sweatshirts & hoodies <span>(16)</span></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="filters__item">
+            <button class="filters__control" aria-expanded="false">
+              <span class="filters__title">Price</span>
+              <span class="filters__icon"></span>
+            </button>
+            <div class="filters__content" aria-hidden="true">
+              <div id="filters__price">привет</div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="products-filters__products">
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product6.jpg" alt="Product glasses" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <h3 class="product__title">Metal bridge sunglasses</h3>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product2.jpg" alt="Product Black and white sport cap" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Black and white sport cap</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$18.15</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
-                </div>
-
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+              <div class="product__price-block">
+                <span class="product__price">$89.95</span>
+                <span class="product__price product__price--old">$40.80</span>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product3.jpg" alt="Product Green baby romper" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Green baby romper</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$20.41</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
                 </div>
 
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product2.jpg" alt="Product Black and white sport cap" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <h3 class="product__title">Black and white sport cap</h3>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product4.jpg" alt="Product Mid-rise slim cropped fit jeans" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Mid-rise slim cropped fit jeans</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$40.05</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
-                </div>
-
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+              <div class="product__price-block">
+                <span class="product__price">$18.15</span>
+                <span class="product__price product__price--old">$40.80</span>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product5.jpg" alt="Product Red dangle earrings" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Red dangle earrings</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$29.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
                 </div>
 
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product3.jpg" alt="Product Green baby romper" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <h3 class="product__title">Green baby romper</h3>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product1.jpg" alt="Product Baby shoes with laces" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Baby shoes with laces</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$30.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
-                </div>
-
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+              <div class="product__price-block">
+                <span class="product__price">$20.41</span>
+                <span class="product__price product__price--old">$40.80</span>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product4.jpg" alt="Product Baby shoes with laces" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Baby shoes with laces</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$30.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
                 </div>
 
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product4.jpg" alt="Product Mid-rise slim cropped fit jeans" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <h3 class="product__title">Mid-rise slim cropped fit jeans</h3>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product7.jpg" alt="Product Baby shoes with laces" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Baby shoes with laces</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$30.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
-                </div>
-
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+              <div class="product__price-block">
+                <span class="product__price">$40.05</span>
+                <span class="product__price product__price--old">$40.80</span>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product8.jpg" alt="Product Baby shoes with laces" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Baby shoes with laces</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$30.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
                 </div>
 
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product5.jpg" alt="Product Red dangle earrings" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <h3 class="product__title">Red dangle earrings</h3>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product10.jpg" alt="Product Baby shoes with laces" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Baby shoes with laces</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$30.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
-                </div>
-
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+              <div class="product__price-block">
+                <span class="product__price">$29.95</span>
+                <span class="product__price product__price--old">$40.80</span>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product11.jpg" alt="Product Baby shoes with laces" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Baby shoes with laces</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$30.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
                 </div>
 
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product1.jpg" alt="Product Baby shoes with laces" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-        <li class="products-filters__product">
-          <article class="product product--arrivals">
-            <span class="product__sale">-50%</span>
+              <h3 class="product__title">Baby shoes with laces</h3>
 
-            <ul class="product__ratings">
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-              <li class="product__item">
-                <img class="product__rating" src="./img/rating.svg" alt="">
-              </li>
-            </ul>
-
-
-            <div class="product__img">
-              <img src="./img/product12.jpg" alt="Product Baby shoes with laces" width="285" height="320">
-
-              <button class="product__favorite" type="button">
-                <svg>
-                  <use xlink:href="./img/sprite.svg#favorite"></use>
-                </svg>
-              </button>
-            </div>
-
-            <h3 class="product__title">Baby shoes with laces</h3>
-
-            <div class="product__price-block">
-              <span class="product__price">$30.95</span>
-              <span class="product__price product__price--old">$40.80</span>
-            </div>
-
-            <div class="product__bottom">
-              <div class="product__change">
-                <div class="product__size">
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">36</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">37</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">38</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">39</span>
-                  </label>
-                  <label>
-                    <input class="product__checkbox" type="checkbox" name="checkbox">
-                    <span class="product__checkbox-style">40</span>
-                  </label>
-                </div>
-
-                <div class="product__color">
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--black"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--brown"></span>
-                  </label>
-                  <label>
-                    <input class="product__radio" type="radio" name="radio">
-                    <span class="product__radio-style product__radio-style--blue"></span>
-                  </label>
-                </div>
+              <div class="product__price-block">
+                <span class="product__price">$30.95</span>
+                <span class="product__price product__price--old">$40.80</span>
               </div>
 
-              <button class="product__btn-add button" type="button">
-                <svg class="product__btn-icon">
-                  <use xlink:href="./img/sprite.svg#cart"></use>
-                </svg>
-                Add to cart
-              </button>
-            </div>
-          </article>
-        </li>
-      </ul>
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
+
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product4.jpg" alt="Product Baby shoes with laces" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <h3 class="product__title">Baby shoes with laces</h3>
+
+              <div class="product__price-block">
+                <span class="product__price">$30.95</span>
+                <span class="product__price product__price--old">$40.80</span>
+              </div>
+
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
+
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product7.jpg" alt="Product Baby shoes with laces" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <h3 class="product__title">Baby shoes with laces</h3>
+
+              <div class="product__price-block">
+                <span class="product__price">$30.95</span>
+                <span class="product__price product__price--old">$40.80</span>
+              </div>
+
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
+
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product8.jpg" alt="Product Baby shoes with laces" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <h3 class="product__title">Baby shoes with laces</h3>
+
+              <div class="product__price-block">
+                <span class="product__price">$30.95</span>
+                <span class="product__price product__price--old">$40.80</span>
+              </div>
+
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
+
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product10.jpg" alt="Product Baby shoes with laces" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <h3 class="product__title">Baby shoes with laces</h3>
+
+              <div class="product__price-block">
+                <span class="product__price">$30.95</span>
+                <span class="product__price product__price--old">$40.80</span>
+              </div>
+
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
+
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product11.jpg" alt="Product Baby shoes with laces" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <h3 class="product__title">Baby shoes with laces</h3>
+
+              <div class="product__price-block">
+                <span class="product__price">$30.95</span>
+                <span class="product__price product__price--old">$40.80</span>
+              </div>
+
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
+
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+          <li class="products-filters__product">
+            <article class="product product--arrivals">
+              <span class="product__sale">-50%</span>
+
+              <ul class="product__ratings">
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+                <li class="product__item">
+                  <img class="product__rating" src="./img/rating.svg" alt="">
+                </li>
+              </ul>
+
+
+              <div class="product__img">
+                <img src="./img/product12.jpg" alt="Product Baby shoes with laces" width="285" height="320">
+
+                <button class="product__favorite" type="button">
+                  <svg>
+                    <use xlink:href="./img/sprite.svg#favorite"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <h3 class="product__title">Baby shoes with laces</h3>
+
+              <div class="product__price-block">
+                <span class="product__price">$30.95</span>
+                <span class="product__price product__price--old">$40.80</span>
+              </div>
+
+              <div class="product__bottom">
+                <div class="product__change">
+                  <div class="product__size">
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">36</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">37</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">38</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">39</span>
+                    </label>
+                    <label>
+                      <input class="product__checkbox" type="checkbox" name="checkbox">
+                      <span class="product__checkbox-style">40</span>
+                    </label>
+                  </div>
+
+                  <div class="product__color">
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--black"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--brown"></span>
+                    </label>
+                    <label>
+                      <input class="product__radio" type="radio" name="radio">
+                      <span class="product__radio-style product__radio-style--blue"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <button class="product__btn-add button" type="button">
+                  <svg class="product__btn-icon">
+                    <use xlink:href="./img/sprite.svg#cart"></use>
+                  </svg>
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
 
       <div class="products-filters__bottom">
         <div class="products-filters__block-sort">

@@ -1,0 +1,119 @@
+// .colors {}
+
+.colors__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-gap: 10px;
+}
+
+// .colors__item {}
+
+.colors__label {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colors__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.colors__radio-style {
+  width: 32px;
+  height: 32px;
+  border: 1px solid $gray-400;
+  border-radius: 100%;
+
+  position: relative;
+  cursor: pointer;
+  transition: border 0.3s;
+  display: block;
+  margin: 0 4px;
+  margin-bottom: 3px;
+}
+
+.colors__radio-style::before {
+  content: "";
+
+  width: 24px;
+  height: 24px;
+  background-color: $black;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.colors__radio-style--black::before {
+  background-color: $black;
+}
+
+.colors__radio-style--brown::before {
+  background-color: $brown;
+}
+
+.colors__radio-style--purple::before {
+  background-color: $purple;
+}
+
+.colors__radio-style--white::before {
+  background-color: $white;
+}
+
+.colors__radio-style--blue-gray::before {
+  background-color: $blue-gray;
+}
+
+.colors__radio-style--yellow::before {
+  background-color: $yellow;
+}
+
+.colors__radio-style--red::before {
+  background-color: $red;
+}
+
+.colors__radio-style--dark-blue::before {
+  background-color: $dark-blue;
+}
+
+.colors__radio-style--beige::before {
+  background-color: $beige;
+}
+
+.colors__radio-style--gray::before {
+  background-color: $black;
+}
+
+.colors__radio-style--green::before {
+  background-color: $green;
+}
+
+.colors__radio-style--orange::before {
+  background-color: $orange;
+}
+
+.colors__radio:focus+.colors__radio-style {
+  border: 1px solid $green;
+}
+
+.colors__radio-style:hover {
+  border: 1px solid $green;
+}
+
+.colors__radio:checked+.colors__radio-style {
+  border: 1px solid $green;
+}
+
+.colors__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $gray-700;
+}

@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "nice-select2": "^1.0.0",
+    "nouislider": "^15.5.0",
     "simplebar": "^5.3.6",
     "swiper": "^7.0.8"
   }

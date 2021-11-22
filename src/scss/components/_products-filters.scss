@@ -13,6 +13,7 @@
 .products-filters__btn {
   max-width: 255px;
   width: 100%;
+  padding: 14px 0;
 
   &:hover {
     .products-filters__icon {
@@ -65,10 +66,24 @@
 // =======================================================================
 // =======================================================================
 
-.products-filters__products {
+.products-filters__middle {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  column-gap: 60px;
+}
+
+.products-filters__filter {
+  grid-column: 3 span;
+}
+
+// ======================================================
+
+.products-filters__products {
+  grid-column: 9 span;
   gap: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
 
   margin-bottom: 80px;
 }
