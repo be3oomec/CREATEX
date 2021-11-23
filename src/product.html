@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CREATEX</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="page">
+    @include('./html/header.html')
+
+    <main class="main">
+      <div class="top-page">
+        <div class="container">
+          <div class="top-page__inner">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#" aria-label="Link Go home">
+                    <svg class="breadcrumbs__icon">
+                      <use xlink:href="./img/sprite.svg#home"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Women
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Clothes
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link">
+                    Basic hooded sweatshirt in pink
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="applied-filters applied-filters--hide">
+              <ul class="applied-filters__list">
+                <li class="applied-filters__item">
+                  <button class="applied-filters__btn" aria-label="Delete filter">
+                    <svg class="applied-filters__icon">
+                      <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                  <span class="applied-filters__info">
+                    Dresses
+                  </span>
+                </li>
+                <li class="applied-filters__item">
+                  <button class="applied-filters__btn" aria-label="Delete filter">
+                    <svg class="applied-filters__icon">
+                      <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                  <span class="applied-filters__info">
+                    Yellow
+                  </span>
+                </li>
+                <li class="applied-filters__item">
+                  <button class="applied-filters__btn" aria-label="Delete filter">
+                    <svg class="applied-filters__icon">
+                      <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                  <span class="applied-filters__info">
+                    Cotton
+                  </span>
+                </li>
+                <li class="applied-filters__item">
+                  <button class="applied-filters__btn" aria-label="Delete filter">
+                    <svg class="applied-filters__icon">
+                      <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                  <span class="applied-filters__info">
+                    Clear all
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      @include('./html/product-info.html')
+      @include('./html/complete.html')
+      @include('./html/interested.html')
+      @include('./html/recently.html')
+      @include('./html/subscribe.html')
+    </main>
+
+    @include('./html/footer.html')
+  </div>
+
+  <script src="js/libs.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,9 @@
-// .applied-filters {}
+.applied-filters {
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
 .applied-filters__list {
   display: flex;

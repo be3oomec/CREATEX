@@ -40,3 +40,23 @@ btnSearch.addEventListener('click', () => {
 let select = NiceSelect.bind(document.getElementById("rating"));
 
 // ===============================================================
+
+const btnShow = document.querySelector(".products-filters__btn"),
+      filters = document.querySelector(".products-filters__filter"),
+      products = document.querySelector(".products-filters__products");
+
+
+if (btnShow !== null) {
+  btnShow.addEventListener("click", () => {
+    filters.classList.toggle("hide");
+    products.classList.toggle("products-filters__products--full");
+
+    if ( filters.classList.contains("hide") ) {
+      btnShow.innerHTML = 'Show filters';
+    }
+    else {
+      btnShow.innerHTML = 'Hide filters';
+    }
+  });
+}
+// ===============================================================
