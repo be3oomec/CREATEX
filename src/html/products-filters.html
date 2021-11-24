@@ -9,21 +9,36 @@
           Hide filters
         </button>
 
-        <div class="products-filters__block-sort">
+        <div class="products-filters__sorting">
           <label for="sort">Sort by</label>
-          <select name="" id="sort">
-            <option value="">popularity</option>
-            <option value="">popularity</option>
+          <select class="products-filters__sort" id="sort">
+            <option data-display="select">popularity</option>
+            <option value="1">popularity</option>
+            <option value="2">popularity</option>
           </select>
         </div>
 
-        <div class="products-filters__block-show">
-          <label for="show">Show</label>
-          <select name="" id="show">
-            <option value="">12</option>
-            <option value="">6</option>
-          </select>
-          <span class="products-filters__show-text">
+        <div class="products-filters__pager pager">
+          <label class="pager__label" for="pager">Show</label>
+          <div class="pager__stepper stepper" id="pager">
+            <label class="stepper__field">
+              <input class="stepper__input" value="1" maxlength="3" type="text" name="count">
+              <span class="stepper__text">pcs</span>
+            </label>
+            <div class="stepper__btns">
+              <button class="stepper__btn stepper__btn--up" aria-label="increase">
+                <svg class="stepper__icon">
+                  <use xlink:href="../img/sprite.svg#arrow-up"></use>
+                </svg>
+              </button>
+              <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="decrease">
+                <svg class="stepper__icon">
+                  <use xlink:href="../img/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <span class="pager__text">
             products per page
           </span>
         </div>
@@ -383,8 +398,8 @@
               <span class="filters__title">Price</span>
               <span class="filters__icon"></span>
             </button>
-            <div class="filters__content" aria-hidden="true">
-              <div id="filters__price">привет</div>
+            <div class="filters__content filters__content--price" aria-hidden="true">
+              <div id="filters__price"></div>
             </div>
           </li>
         </ul>
@@ -1474,21 +1489,43 @@
       </div>
 
       <div class="products-filters__bottom">
-        <div class="products-filters__block-sort">
-          <label for="sort">Sort by</label>
-          <select name="" id="sort">
-            <option value="">popularity</option>
-            <option value="">popularity</option>
+        <button class="products-filters__btn products-filters__btn--hide button">
+          <svg class="products-filters__icon">
+            <use xlink:href="./img/sprite.svg#filter"></use>
+          </svg>
+          Hide filters
+        </button>
+
+        <div class="products-filters__sorting">
+          <label for="sort2">Sort by</label>
+          <select class="products-filters__sort" id="sort2">
+            <option data-display="select">popularity</option>
+            <option value="1">popularity</option>
+            <option value="2">popularity</option>
           </select>
         </div>
 
-        <div class="products-filters__block-show">
-          <label for="show">Show</label>
-          <select name="" id="show">
-            <option value="">12</option>
-            <option value="">6</option>
-          </select>
-          <span class="products-filters__show-text">
+        <div class="products-filters__pager pager">
+          <label class="pager__label" for="pager2">Show</label>
+          <div class="pager__stepper stepper" id="pager2">
+            <label class="stepper__field">
+              <input class="stepper__input" value="1" maxlength="3" type="text" name="count">
+              <span class="stepper__text">pcs</span>
+            </label>
+            <div class="stepper__btns">
+              <button class="stepper__btn stepper__btn--up" aria-label="increase">
+                <svg class="stepper__icon">
+                  <use xlink:href="../img/sprite.svg#arrow-up"></use>
+                </svg>
+              </button>
+              <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="decrease">
+                <svg class="stepper__icon">
+                  <use xlink:href="../img/sprite.svg#arrow-down"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <span class="pager__text">
             products per page
           </span>
         </div>

@@ -1,15 +1,7 @@
 
-let slider = document.querySelector('#filters__price');
-if (slider) {
-  noUiSlider.create(slider, {
-      start: [20, 80],
-      connect: true,
-      range: {
-          'min': 0,
-          'max': 100
-      }
-  });
-}
+let select = NiceSelect.bind(document.getElementById("rating"));
+let select2 = NiceSelect.bind(document.getElementById("sort2"));
+let select3 = NiceSelect.bind(document.getElementById("sort"));
 
 // ==============================================================
 
@@ -35,11 +27,7 @@ btnSearch.addEventListener('click', () => {
   inputSearch.classList.toggle('hide');
 });
 
-// ===============================================================
-
-let select = NiceSelect.bind(document.getElementById("rating"));
-
-// ===============================================================
+// ==============================================================
 
 const btnShow = document.querySelector(".products-filters__btn"),
       filters = document.querySelector(".products-filters__filter"),
@@ -59,4 +47,3 @@ if (btnShow !== null) {
     }
   });
 }
-// ===============================================================

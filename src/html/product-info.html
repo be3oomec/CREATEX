@@ -12,17 +12,17 @@
 
       <div class="product-info__tabs tabs">
         <ul class="tabs__top">
-          <li class="tabs__btn">
+          <li class="tabs__item-btn">
             <button class="tabs__button tabs__button--active" data-tabs-path="general">
               General info
             </button>
           </li>
-          <li class="tabs__btn">
+          <li class="tabs__item-btn">
             <button class="tabs__button" data-tabs-path="details">
               Product details
             </button>
           </li>
-          <li class="tabs__btn">
+          <li class="tabs__item-btn">
             <button class="tabs__button" data-tabs-path="reviews">
               Reviews
             </button>
@@ -30,280 +30,234 @@
         </ul>
 
         <ul class="tabs__content">
-          <li class="tabs__item tabs__item--active" data-tabs-target="ceiling">
+          <li class="tabs__item tabs__item--active" data-tabs-target="general">
             <div class="tabs__slider">
-              <div class="tabs__slides swiper">
+              <div class="tabs__slides">
 
                 <button class="swiper-p">
                   <svg class="swiper-icon">
-                    <use xlink:href="./img/sprite.svg#btn__left"></use>
+                    <use xlink:href="./img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
 
-                <div class="swiper-wrapper">
-                  <div class="tabs__image swiper-slide">
-                    <img class="tabs__img" src="./img/types__gallery1.jpg" alt="a projector in a protective metal box"
-                      width="615" height="440">
+                <div class="tabs__slides-container">
+                  <div class="tabs__image">
+                    <img class="tabs__img" src="./img/product-image1.jpg" alt="Basic hooded sweatshirt in pink"
+                      width="600" height="600">
                   </div>
-                  <div class="tabs__image swiper-slide">
-                    <img class="tabs__img" src="./img/types__gallery1.jpg" alt="boy playing with toy train" width="615"
-                      height="440">
+                  <div class="tabs__image">
+                    <img class="tabs__img" src="./img/product-image1.jpg" alt="Basic hooded sweatshirt in pink" width="600"
+                      height="600">
                   </div>
-                  <div class="tabs__image swiper-slide">
-                    <img class="tabs__img" src="./img/types__gallery1.jpg" alt="boy playing with twister" width="615"
-                      height="440">
+                  <div class="tabs__image">
+                    <img class="tabs__img" src="./img/product-image1.jpg" alt="Basic hooded sweatshirt in pink" width="600"
+                      height="600">
                   </div>
-                  <div class="tabs__image swiper-slide">
-                    <img class="tabs__img" src="./img/types__gallery1.jpg" alt="a projector in a protective metal box"
-                      width="615" height="440">
+                  <div class="tabs__image">
+                    <img class="tabs__img" src="./img/product-image1.jpg" alt="Basic hooded sweatshirt in pink"
+                      width="600" height="600">
+                  </div>
+                  <div class="tabs__image">
+                    <img class="tabs__img" src="./img/product-image1.jpg" alt="a projector in a protective metal box"
+                      width="600" height="600">
                   </div>
                 </div>
 
                 <button class="swiper-n">
                   <svg class="swiper-icon">
-                    <use xlink:href="./img/sprite.svg#btn__right"></use>
+                    <use xlink:href="./img/sprite.svg#arrow-right"></use>
                   </svg>
                 </button>
 
                 <div class="swiper-pagination"></div>
               </div>
 
-              <div class="tabs__slides-mini swiper">
-                <div class="tabs__slides-wrapper swiper-wrapper">
-                  <div class="tabs__image-mini swiper-slide">
-                    <img class="tabs__img-mini" src="./img/types__gallery1.jpg" alt="a projector in a protective metal box"
-                      width="615" height="440">
+              <div class="tabs__slides-mini">
+                <div class="tabs__slides-wrapper">
+                  <div class="tabs__image-mini">
+                    <img class="tabs__img-mini" src="./img/product-mini-image1.jpg" alt="Basic hooded sweatshirt in pink"
+                      width="104" height="104">
                   </div>
-                  <div class="tabs__image-mini swiper-slide">
-                    <img class="tabs__img-mini" src="./img/types__gallery1.jpg" alt="boy playing with toy train" width="615"
-                      height="440">
+                  <div class="tabs__image-mini">
+                    <img class="tabs__img-mini" src="./img/product-mini-image2.jpg" alt="Basic hooded sweatshirt in pink" width="104"
+                      height="104">
                   </div>
-                  <div class="tabs__image-mini swiper-slide">
-                    <img class="tabs__img-mini" src="./img/types__gallery1.jpg" alt="boy playing with twister" width="615"
-                      height="440">
+                  <div class="tabs__image-mini">
+                    <img class="tabs__img-mini" src="./img/product-mini-image3.jpg" alt="Basic hooded sweatshirt in pink" width="104"
+                      height="104">
                   </div>
-                  <div class="tabs__image-mini swiper-slide">
-                    <img class="tabs__img-mini" src="./img/types__gallery1.jpg" alt="a projector in a protective metal box"
-                      width="615" height="440">
+                  <div class="tabs__image-mini">
+                    <img class="tabs__img-mini" src="./img/product-mini-image4.jpg" alt="Basic hooded sweatshirt in pink"
+                      width="104" height="104">
+                  </div>
+                  <div class="tabs__image-mini">
+                    <img class="tabs__img-mini" src="./img/product-mini-image5.jpg" alt="Basic hooded sweatshirt in pink video"
+                      width="104" height="104">
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="tabs__info">
-              <h3 class="tabs__title">
-                Ceiling version
-              </h3>
-              <div class="tabs__text">
-                <p>
-                  Optimal solution in&nbsp;terms of&nbsp;reliability in&nbsp;use and price: a&nbsp;set with a&nbsp;projector
-                  in&nbsp;a&nbsp;protective metal box.
-                </p>
-                <p>
-                  The color of&nbsp;the case can be&nbsp;any.
-                </p>
-                <p>
-                  The play area depends on&nbsp;the height of&nbsp;your ceiling and can
-                  be&nbsp;up&nbsp;to&nbsp;14&nbsp;m&sup2;.
-                  We&nbsp;will calculate for you individual interactive floor projects for kindergartens, schools and
-                  entertainment
-                  institutions.
-                </p>
-              </div>
-
-              <div class="tabs__include">
-                <p>
-                  The set includes:
-                </p>
-                <div class="tabs__block-list">
-                  <ul class="tabs__include-list">
-                    <li class="tabs__include-item">
-                      Powerful projector
+              <div class="tabs__info-top">
+                <div class="tabs__info-price">
+                  <span>$15.50</span>
+                  <span>$31.00</span>
+                  <span>-50%</span>
+                </div>
+                <div class="tabs__info-rating">
+                  <ul class="product__ratings">
+                    <li class="product__item">
+                      <img class="product__rating" src="./img/rating.svg" alt="Product rating 5 out of 5">
                     </li>
-                    <li class="tabs__include-item">
-                      Powerful computer
+                    <li class="product__item">
+                      <img class="product__rating" src="./img/rating.svg" alt="">
                     </li>
-                    <li class="tabs__include-item">
-                      Сamera
+                    <li class="product__item">
+                      <img class="product__rating" src="./img/rating.svg" alt="">
                     </li>
-                    <li class="tabs__include-item">
-                      Motion sensors
+                    <li class="product__item">
+                      <img class="product__rating" src="./img/rating.svg" alt="">
                     </li>
-                    <li class="tabs__include-item">
-                      Remote control projector
+                    <li class="product__item">
+                      <img class="product__rating" src="./img/rating.svg" alt="">
                     </li>
                   </ul>
-                  <ul class="tabs__include-list">
-                    <li class="tabs__include-item">
-                      Keyboard
-                    </li>
-                    <li class="tabs__include-item">
-                      Mouse
-                    </li>
-                    <li class="tabs__include-item">
-                      Software
-                    </li>
-                    <li class="tabs__include-item">
-                      Soft white floor
-                    </li>
-                    <li class="tabs__include-item">
-                      24 geometric shapes
-                    </li>
-                  </ul>
+                  <span>12 reviews</span>
+                </div>
+                <div class="tabs__info-color">
+                  <label for="color">Color</label>
+                  <label>
+                    <input class="product__radio" type="radio" name="radio">
+                    <span class="product__radio-style product__radio-style--black"></span>
+                  </label>
+                  <label>
+                    <input class="product__radio" type="radio" name="radio">
+                    <span class="product__radio-style product__radio-style--brown"></span>
+                  </label>
+                  <label>
+                    <input class="product__radio" type="radio" name="radio">
+                    <span class="product__radio-style product__radio-style--blue"></span>
+                  </label>
+                </div>
+                <div class="tabs__info-dimensions">
+                  <div class="tabs__info-size">
+                    <label for="select-size">Size</label>
+                    <select name="" id="select-size">
+                      <option value="">1</option>
+                    </select>
+                  </div>
+                  <button>Size chart</button>
+                </div>
+                <div class="tabs__info-btns">
+                  <div class="tabs__info-stepper stepper">
+                    <label class="stepper__field">
+                      <input class="stepper__input" value="1" maxlength="3" type="text" name="count">
+                      <span class="stepper__text">pcs</span>
+                    </label>
+                    <div class="stepper__btns">
+                      <button class="stepper__btn stepper__btn--up" aria-label="increase">
+                        <svg class="stepper__icon">
+                          <use xlink:href="../img/sprite.svg#arrow-up"></use>
+                        </svg>
+                      </button>
+                      <button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="decrease">
+                        <svg class="stepper__icon">
+                          <use xlink:href="../img/sprite.svg#arrow-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <button class="tabs__info-add button">Add to cart</button>
+                  <button class="tabs__info-fav button button--white">Favourite</button>
                 </div>
               </div>
+
+              <ul class="tabs__info-accordion accordion">
+                <li class="accordion__item">
+                  <button class="accordion__control" aria-expanded="false">
+                    <span class="accordion__title">
+                      Delivery
+                    </span>
+                    <span class="accordion__icon"></span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true">
+                    Free standard shipping on orders over $35 before tax, plus free returns.
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <button class="accordion__control" aria-expanded="false">
+                    <span class="accordion__title">
+                      Return
+                    </span>
+                  </button>
+                  <div class="accordion__content" aria-hidden="true">
+                    <p>You have 60 days to return the item(s) using any of the following methods:</p>
+                    <ul class="accordion__content-list">
+                      <li class="accordion__content__item">Free store return</li>
+                      <li class="accordion__content__item">Free returns via USPS Dropoff Service</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="accordion__item">
+                  <span class="accordion__title">
+                    Share:
+                  </span>
+                  <ul class="accordion__content-list">
+                    <li class="accordion__content-item">
+                      <a class="accordion__content-link" href="#" aria-label="Link on Facebook">
+                        <svg class="accordion__content-icon">
+                          <use xlink:href="./img/sprite.svg#Facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="accordion__content-item">
+                      <a class="accordion__content-link" href="#" aria-label="Link on Twitter">
+                        <svg class="accordion__content-icon">
+                          <use xlink:href="./img/sprite.svg#Twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="accordion__content-item">
+                      <a class="accordion__content-link" href="#" aria-label="Link on Pinterest">
+                        <svg class="accordion__content-icon">
+                          <use xlink:href="./img/sprite.svg#pinterest"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="tabs__info-payments">
+                <li class="tabs__info-payment">
+                  <a class="tabs__info-link" href="#">
+                    <svg class="tabs__info-icon">
+                      <use xlink:href="./img/sprite.svg#visa"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="tabs__info-payment">
+                  <a class="tabs__info-link" href="#">
+                    <svg class="tabs__info-icon">
+                      <use xlink:href="./img/sprite.svg#mastercard"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="tabs__info-payment">
+                  <a class="tabs__info-link" href="#">
+                    <svg class="tabs__info-icon">
+                      <use xlink:href="./img/sprite.svg#paypal"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </li>
 
-          <li class="tabs__item" data-tabs-target="mobile">
-            <div class="tabs__slider">
-              <div class="tabs__slides">
-                <div class="tabs__image">
-                  <img class="tabs__img" src="./img/types__gallery1.jpg" alt="a projector in a protective metal box"
-                    width="615" height="440">
-                </div>
-              </div>
-            </div>
+          <li class="tabs__item" data-tabs-target="details"></li>
 
-            <div class="tabs__info">
-              <h3 class="tabs__title">
-                Mobile version
-              </h3>
-              <div class="tabs__text">
-                <p>
-                  Optimal solution in&nbsp;terms of&nbsp;reliability in&nbsp;use and price: a&nbsp;set with a&nbsp;projector
-                  in&nbsp;a&nbsp;protective metal box.
-                </p>
-                <p>
-                  The color of&nbsp;the case can be&nbsp;any.
-                </p>
-                <p>
-                  The play area depends on&nbsp;the height of&nbsp;your ceiling and can
-                  be&nbsp;up&nbsp;to&nbsp;14&nbsp;m&sup2;.
-                  We&nbsp;will calculate for you individual interactive floor projects for kindergartens, schools and
-                  entertainment
-                  institutions.
-                </p>
-              </div>
-
-              <div class="tabs__include">
-                <p>
-                  The set includes:
-                </p>
-                <div class="tabs__block-list">
-                  <ul class="tabs__include-list">
-                    <li class="tabs__include-item">
-                      Powerful projector
-                    </li>
-                    <li class="tabs__include-item">
-                      Powerful computer
-                    </li>
-                    <li class="tabs__include-item">
-                      Сamera
-                    </li>
-                    <li class="tabs__include-item">
-                      Motion sensors
-                    </li>
-                    <li class="tabs__include-item">
-                      Remote control projector
-                    </li>
-                  </ul>
-                  <ul class="tabs__include-list">
-                    <li class="tabs__include-item">
-                      Keyboard
-                    </li>
-                    <li class="tabs__include-item">
-                      Mouse
-                    </li>
-                    <li class="tabs__include-item">
-                      Software
-                    </li>
-                    <li class="tabs__include-item">
-                      Soft white floor
-                    </li>
-                    <li class="tabs__include-item">
-                      24 geometric shapes
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="tabs__item" data-tabs-target="floor">
-            <div class="tabs__slider">
-              <div class="tabs__slides">
-                <div class="tabs__image">
-                  <img class="tabs__img" src="./img/types__gallery1.jpg" alt="a projector in a protective metal box"
-                    width="615" height="440">
-                </div>
-              </div>
-            </div>
-
-            <div class="tabs__info">
-              <h3 class="tabs__title">
-                Floor stand
-              </h3>
-              <div class="tabs__text">
-                <p>
-                  Optimal solution in&nbsp;terms of&nbsp;reliability in&nbsp;use and price: a&nbsp;set with a&nbsp;projector
-                  in&nbsp;a&nbsp;protective metal box.
-                </p>
-                <p>
-                  The color of&nbsp;the case can be&nbsp;any.
-                </p>
-                <p>
-                  The play area depends on&nbsp;the height of&nbsp;your ceiling and can
-                  be&nbsp;up&nbsp;to&nbsp;14&nbsp;m&sup2;.
-                  We&nbsp;will calculate for you individual interactive floor projects for kindergartens, schools and
-                  entertainment
-                  institutions.
-                </p>
-              </div>
-
-              <div class="tabs__include">
-                <p>
-                  The set includes:
-                </p>
-                <div class="tabs__block-list">
-                  <ul class="tabs__include-list">
-                    <li class="tabs__include-item">
-                      Powerful projector
-                    </li>
-                    <li class="tabs__include-item">
-                      Powerful computer
-                    </li>
-                    <li class="tabs__include-item">
-                      Сamera
-                    </li>
-                    <li class="tabs__include-item">
-                      Motion sensors
-                    </li>
-                    <li class="tabs__include-item">
-                      Remote control projector
-                    </li>
-                  </ul>
-                  <ul class="tabs__include-list">
-                    <li class="tabs__include-item">
-                      Keyboard
-                    </li>
-                    <li class="tabs__include-item">
-                      Mouse
-                    </li>
-                    <li class="tabs__include-item">
-                      Software
-                    </li>
-                    <li class="tabs__include-item">
-                      Soft white floor
-                    </li>
-                    <li class="tabs__include-item">
-                      24 geometric shapes
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
+          <li class="tabs__item" data-tabs-target="reviews"></li>
         </ul>
       </div>
     </div>
